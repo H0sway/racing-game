@@ -1,15 +1,30 @@
 body {
   margin: 0 auto;
   text-align: center;
+  background-color: #664d00;
+}
+
+header {
+  background-color: #ffff4d;
 }
 
 h1 {
   font-family: 'Coustard', serif;
 }
 
+h2 {
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
 h4 {
   text-align: center;
   position: relative;
+}
+
+footer {
+  background-color:#003300;
+  color: #FFFFFF;
+  padding: 10px;
 }
 
 .game {
@@ -26,7 +41,7 @@ h4 {
 .racerone {
   height: 150px;
   width: 100px;
-  background: #006600;
+  background-color: #006600;
   border: 2px solid #006600;
   margin: 10px;
   display: inline-block;
@@ -36,7 +51,7 @@ h4 {
 .racertwo {
   height: 150px;
   width: 100px;
-  background: #0000ff;
+  background-color: #0000ff;
   border: 2px solid #0000ff;
   margin: 160px 10px 10px 10px;
   display: inline-block;
