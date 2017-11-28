@@ -16,6 +16,10 @@ h2 {
   font-family: 'Shadows Into Light Two', cursive;
 }
 
+p {
+  font-size: 22px;
+}
+
 h4 {
   text-align: center;
   position: relative;
@@ -35,10 +39,10 @@ footer {
   background-
   border: 4px solid #000;
   display: inline-block;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
-.racerone {
+#racer1 {
   height: 150px;
   width: 100px;
   background-color: #006600;
@@ -48,7 +52,7 @@ footer {
   float: left;
 }
 
-.racertwo {
+#racer2 {
   height: 150px;
   width: 100px;
   background-color: #0000ff;
@@ -59,7 +63,7 @@ footer {
   clear: left;
 }
 
-.end {
+#end {
   height: 494px;
   width: 0;
   border: 3px solid #ff0000;
@@ -68,4 +72,14 @@ footer {
   float: right;
   margin-top: -174px;
   margin-right: 20px;
+}
+
+#button {
+  height: 70px;
+  width: 125px;
+  background-color: #ffff1a;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 auto;
+  cursor: pointer;
 }
