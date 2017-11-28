@@ -47,9 +47,9 @@ footer {
   width: 100px;
   background-color: #006600;
   border: 2px solid #006600;
-  margin: 10px;
-  display: inline-block;
-  float: left;
+  position: absolute;
+  top: 220px;
+  left: 140px;
 }
 
 #racer2 {
@@ -57,21 +57,18 @@ footer {
   width: 100px;
   background-color: #0000ff;
   border: 2px solid #0000ff;
-  margin: 160px 10px 10px 10px;
-  display: inline-block;
-  float: left;
-  clear: left;
+  position: absolute;
+  top: 550px;
+  left: 140px;
 }
 
 #end {
-  height: 494px;
+  height: 495px;
   width: 0;
   border: 3px solid #ff0000;
-  display: inline-block;
-  position: relative;
-  float: right;
-  margin-top: -174px;
-  margin-right: 20px;
+  position: absolute;
+  top: 211px;
+  left: 1100px;
 }
 
 #button {
