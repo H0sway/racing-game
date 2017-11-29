@@ -13,11 +13,13 @@ let racer1Val = 5;
 let racer2Val = 5;
 
 function moveRacers(event) {
+  // put win condition here to stop racers from being able to move after a win
     if (racer1.style.left == '905px') {
     // return stops the alert from going off on every key press
     return alert("Plane Wins!");
   } if (racer2.style.left == '905px') {
     return alert('Car Wins!');
+  // move function starts here
   } if (event.keyCode == 39) {
       console.log(event)
   racer1Val = racer1Val + 25;
@@ -33,14 +35,6 @@ function moveRacers(event) {
   }
 };
 
-// function to determine the winner
-
-function youWin() {
-
-};
-
-// // event listener for the winner function
-// document.addEventListener('keyup',youWin);
 
 // add button functionality, resets everything to how it is when you first load the page
 function reset(event) {
