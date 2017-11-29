@@ -9,8 +9,8 @@ document.addEventListener('keyup',moveRacers);
 const button = document.getElementById("button");
 
 // Starting point for each racer
-let racer1Val = 145;
-let racer2Val = 145;
+let racer1Val = 5;
+let racer2Val = 5;
 
 function moveRacers(event) {
   if (event.keyCode == 39) {
@@ -31,11 +31,11 @@ function moveRacers(event) {
 // function to determine the winner
 
 function youWin() {
-  if (racer1.style.left == '1045px') {
+  if (racer1.style.left == '905px') {
     // return stops the alert from going off on every key press
-    return alert("Green Block Wins!");
-  } if (racer2.style.left == '1045px') {
-    return alert('Blue Block Wins!');
+    return alert("Plane Wins!");
+  } if (racer2.style.left == '905px') {
+    return alert('Car Wins!');
   }
 };
 
@@ -44,9 +44,9 @@ document.addEventListener('keyup',youWin);
 
 // add button functionality, resets everything to how it is when you first load the page
 function reset(event) {
-  racer1Val = 145;
+  racer1Val = 5;
   racer1.style.left = racer1Val + "px";
-  racer2Val = 145;
+  racer2Val = 5;
   racer2.style.left = racer2Val + "px";
 };
 
