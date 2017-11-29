@@ -13,7 +13,12 @@ let racer1Val = 5;
 let racer2Val = 5;
 
 function moveRacers(event) {
-  if (event.keyCode == 39) {
+    if (racer1.style.left == '905px') {
+    // return stops the alert from going off on every key press
+    return alert("Plane Wins!");
+  } if (racer2.style.left == '905px') {
+    return alert('Car Wins!');
+  } if (event.keyCode == 39) {
       console.log(event)
   racer1Val = racer1Val + 25;
   racer1.style.left = racer1Val + "px";
@@ -31,16 +36,11 @@ function moveRacers(event) {
 // function to determine the winner
 
 function youWin() {
-  if (racer1.style.left == '905px') {
-    // return stops the alert from going off on every key press
-    return alert("Plane Wins!");
-  } if (racer2.style.left == '905px') {
-    return alert('Car Wins!');
-  }
+
 };
 
-// event listener for the winner function
-document.addEventListener('keyup',youWin);
+// // event listener for the winner function
+// document.addEventListener('keyup',youWin);
 
 // add button functionality, resets everything to how it is when you first load the page
 function reset(event) {
