@@ -17,7 +17,8 @@ h2 {
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 h4 {
@@ -49,7 +50,7 @@ footer {
   border: 2px solid #006600;
   position: absolute;
   top: 220px;
-  left: 140px;
+  left: 145px;
 }
 
 #racer2 {
@@ -59,7 +60,7 @@ footer {
   border: 2px solid #0000ff;
   position: absolute;
   top: 550px;
-  left: 140px;
+  left: 145px;
 }
 
 #end {
@@ -74,9 +75,13 @@ footer {
 #button {
   height: 70px;
   width: 125px;
-  background-color: #ffff1a;
+  background-color: #99ff99;
   border-radius: 5px;
   padding: 5px;
   margin: 0 auto;
   cursor: pointer;
+}
+
+#button:hover {
+  background-color: #99ccff;
 }
