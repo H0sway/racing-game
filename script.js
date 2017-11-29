@@ -3,7 +3,10 @@ const racer1 = document.getElementById("racer1");
 // define the racer2 variable
 const racer2 = document.getElementById("racer2");
 // add an event listener for the moveRacers function
-document.addEventListener('keydown',moveRacers);
+// use keyup so that people can't cheat by holding down the key
+document.addEventListener('keyup',moveRacers);
+// define the reset button
+const button = document.getElementById("button");
 
 // Starting point for each racer
 let racer1Val = 145;
@@ -37,4 +40,14 @@ function youWin() {
 };
 
 // event listener for the winner function
-document.addEventListener('keydown',youWin);
+document.addEventListener('keyup',youWin);
+
+// add button functionality, resets everything to how it is when you first load the page
+function reset(event) {
+  racer1Val = 145;
+  racer1.style.left = racer1Val + "px";
+  racer2Val = 145;
+  racer2.style.left = racer2Val + "px";
+};
+
+button.addEventListener('click',reset)
