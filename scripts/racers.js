@@ -1,12 +1,12 @@
 $(document).ready(() => {
   // Grab the racers
-  let $racer1 = $("#racer1");
-  let $racer2 = $("#racer2");
+  const $racer1 = $("#racer1");
+  const $racer2 = $("#racer2");
   // Used for checking the winner
   let racer1Val = 0;
   let racer2Val = 0;
   // Grab the reset button
-  let $button = $("#button");
+  const $button = $("#button");
 
   $(document).keyup(move);
 
