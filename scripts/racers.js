@@ -32,4 +32,22 @@ $button.click(() => {
   $racer1.css("left","5px");
   $racer2.css("left","5px");
   });
+
+  const $form = $("form");
+  $form.submit(answer);
+
+  function answer(event) {
+    const $select = $("select[name=answer]");
+    const $first = $("#first");
+    const $second = $("#second");
+    event.preventDefault();
+    if ($select.val("Yes")) {
+      console.log("Yes");
+      return alert("Thank you very much!");
+    } if ($select.val("No")) {
+      console.log("No");
+      return alert("Well, it don't like you much either");
+    }
+  }
+
 }); // End of document.ready

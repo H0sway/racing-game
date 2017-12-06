@@ -26,6 +26,14 @@ h4 {
   position: relative;
 }
 
+form {
+  color: #ffffff;
+}
+
+select {
+  margin-top: 20px;
+}
+
 footer {
   background-color:#003300;
   color: #FFFFFF;
