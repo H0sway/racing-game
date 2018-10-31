@@ -21,6 +21,10 @@ p {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
+li {
+  display: inline-block;
+}
+
 h4 {
   text-align: center;
   position: relative;
@@ -38,6 +42,27 @@ footer {
   background-color:#003300;
   color: #FFFFFF;
   padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.wins {
+  height: 70px;
+  width: 125px;
+  margin: 0 1em;
+  background-color: #99ff99;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.wins:hover {
+  background-color: #99ccff;
 }
 
 .game {
@@ -83,10 +108,10 @@ footer {
 #button {
   height: 70px;
   width: 125px;
+  margin: 0 1em;
   background-color: #99ff99;
   border-radius: 5px;
   padding: 5px;
-  margin: 0 auto;
   cursor: pointer;
 }
 

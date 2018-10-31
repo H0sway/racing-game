@@ -39,11 +39,15 @@ $(document).ready(() => {
   function move() {
     if (plane.moves === 35) {
       alert("Plane Wins!");
+      plane.wins +=1;
+      console.log(plane.wins + ", " + car.wins);
       reset();
       return
     }
     if (car.moves === 35) {
       alert("Car Wins");
+      car.wins +=1;
+      console.log(plane.wins + ", " + car.wins);
       reset();
       return
     }
